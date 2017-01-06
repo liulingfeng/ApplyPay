@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/line_one"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="#C0C6C9" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_below="@id/line_one"
+        android:text="订单号：2014566235856"
+        android:textColor="#A3A3A2"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@id/number"
+        android:layout_below="@id/number"
+        android:background="#C0C6C9" />
+
+    <ImageView
+        android:id="@+id/good"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/line"
+        android:layout_margin="8dp"
+        android:background="@drawable/good_one"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/good"
+        android:layout_toRightOf="@id/good"
+        android:text="时间：2016-5-28"
+        android:textColor="#595857"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/good"
+        android:text="数量：5"
+        android:textColor="#595857"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/good"
+        android:layout_toRightOf="@id/good"
+        android:text="订单总额：￥130"
+        android:textColor="#595857"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/good"
+        android:background="#C0C6C9" />
+
+</RelativeLayout>

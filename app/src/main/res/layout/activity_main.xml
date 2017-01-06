@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/tabItemLL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:id="@+id/tabItemIv1"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/tab_sell" />
+
+                <TextView
+                    android:id="@+id/tabIem1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="佳节精品"
+                    android:textColor="#7e7e7e"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tabItemLL2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:id="@+id/tabItemIv2"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/tab_trolley" />
+
+                <TextView
+                    android:id="@+id/tabIem2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="购物车"
+                    android:textColor="#7e7e7e"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tabItemLL3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:id="@+id/tabItemIv3"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/tab_order" />
+
+                <TextView
+                    android:id="@+id/tabIem3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="订单"
+                    android:textColor="#7e7e7e"
+                    android:textSize="12sp" />
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</TabHost>

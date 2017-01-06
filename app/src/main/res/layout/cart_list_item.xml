@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:button="@drawable/check_box_bg"
+        android:paddingRight="10dp" />
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/checkBox"
+        android:background="#ddd" />
+
+  
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ivPicture"
+        android:gravity="center_vertical"
+        android:text="￥188.00"
+        android:textColor="#FF3933"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/ivPicture"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/tvPrice"
+        android:layout_toRightOf="@+id/ivPicture"
+        android:maxLines="2"
+        android:text="商品名称商品名称商品名称商品商品名称商商品名称商商品名称商商品名称商"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvSkuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/ivPicture"
+        android:gravity="center_vertical"
+        android:text="规格：无线可充电"
+        android:textColor="#A9A9A9"
+        android:maxLines="1"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/editRL"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_below="@+id/tvSkuName"
+          >
+
+        <ImageView
+            android:id="@+id/ivMinus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cart_subtract_bt_xml" />
+
+        <TextView
+            android:id="@+id/etNum"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/ivMinus"
+            android:background="@drawable/cart_edit_bg"
+            android:gravity="center"
+            android:text="1" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/ivPlus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/etNum"
+            android:layout_toRightOf="@+id/etNum"
+            android:src="@drawable/cart_add_bt_xml" />
+
+        <ImageButton
+            android:id="@+id/deleteBt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:src="@drawable/cart_delete_bt" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
